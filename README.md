@@ -49,17 +49,15 @@ One model is built from scratch (Model A), and the other fine-tunes a pre-traine
 
 ## 🧪 Methodology
 
-### Data Preprocessing
+### 🟠 Data Preprocessing
 
 - Extracted age and gender labels from image filenames.
 - Split data into 80% training and 20% validation.
 - Applied data augmentation:
   - Rotation, shifts, shear, zoom, horizontal flip
 - Resized all images to **128x128 pixels**.
-  
----
 
-### Model A: Custom CNN
+### 🟠 Model A: Custom CNN
 
 - **Architecture**:
   - 4 convolutional blocks with Batch Normalization + MaxPooling
@@ -75,9 +73,7 @@ One model is built from scratch (Model A), and the other fine-tunes a pre-traine
     - Dropout (30%)
     - Early stopping to prevent overfitting
 
----
-
-### Model B: Fine-tuned VGG16
+### 🟠 Model B: Fine-tuned VGG16
 
 - Used VGG16 pre-trained on ImageNet.
 - **Frozen** first 14 layers.
